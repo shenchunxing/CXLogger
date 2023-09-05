@@ -9,6 +9,15 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+```
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+	//开启日志
+    [[CXLoggerManager shareManager] startLogger];
+    return YES;
+}
+```
+
 ## Requirements
 
 ## Installation

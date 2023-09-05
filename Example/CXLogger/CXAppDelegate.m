@@ -7,12 +7,15 @@
 //
 
 #import "CXAppDelegate.h"
+#import <CXLogger/CXLogger.h>
 
 @implementation CXAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    //开启日志
+    [[CXLoggerManager shareManager] startLogger];
     return YES;
 }
 

@@ -38,9 +38,9 @@
 
 /* Begin PBXFileReference section */
 		00D8944FDD807B3EB11468BF /* Pods-CXLogger_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXLogger_Example.debug.xcconfig"; path = "Target Support Files/Pods-CXLogger_Example/Pods-CXLogger_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		0B5DDEB6E5788C2958CFB9FC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0B5DDEB6E5788C2958CFB9FC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		1591D51D21BD0D3BFE243B66 /* Pods-CXLogger_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXLogger_Example.release.xcconfig"; path = "Target Support Files/Pods-CXLogger_Example/Pods-CXLogger_Example.release.xcconfig"; sourceTree = "<group>"; };
-		20570B36CC7E6B6220024DA7 /* CXLogger.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CXLogger.podspec; path = ../CXLogger.podspec; sourceTree = "<group>"; };
+		20570B36CC7E6B6220024DA7 /* CXLogger.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CXLogger.podspec; path = ../CXLogger.podspec; sourceTree = "<group>"; };
 		4B5D533B5A495A740153DAD8 /* Pods_CXLogger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CXLogger_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* CXLogger_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CXLogger_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,7 +64,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7571916DDF30CD46002E2BF4 /* Pods-CXLogger_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXLogger_Tests.release.xcconfig"; path = "Target Support Files/Pods-CXLogger_Tests/Pods-CXLogger_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8B4425A43745EEE19A448703 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8B4425A43745EEE19A448703 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		AE0BD159572AA98EDB482796 /* Pods_CXLogger_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CXLogger_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9A98E8F0D9D147092941854 /* Pods-CXLogger_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXLogger_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CXLogger_Tests/Pods-CXLogger_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,7 +193,6 @@
 				B9A98E8F0D9D147092941854 /* Pods-CXLogger_Tests.debug.xcconfig */,
 				7571916DDF30CD46002E2BF4 /* Pods-CXLogger_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = shenchunxing;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 56H687J9FX;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,11 +305,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CXLogger_Example/Pods-CXLogger_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/CXLogger/CXLogger.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CXLogger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -494,6 +503,7 @@
 			baseConfigurationReference = 00D8944FDD807B3EB11468BF /* Pods-CXLogger_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 56H687J9FX;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CXLogger/CXLogger-Prefix.pch";
 				INFOPLIST_FILE = "CXLogger/CXLogger-Info.plist";
@@ -510,6 +520,7 @@
 			baseConfigurationReference = 1591D51D21BD0D3BFE243B66 /* Pods-CXLogger_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 56H687J9FX;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CXLogger/CXLogger-Prefix.pch";
 				INFOPLIST_FILE = "CXLogger/CXLogger-Info.plist";

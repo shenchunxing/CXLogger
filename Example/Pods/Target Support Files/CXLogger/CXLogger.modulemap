@@ -1,0 +1,6 @@
+framework module CXLogger {
+  umbrella header "CXLogger-umbrella.h"
+
+  export *
+  module * { export * }
+}

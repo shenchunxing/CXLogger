@@ -1,0 +1,33 @@
+{
+  "name": "CXLogger",
+  "version": "0.1.0",
+  "summary": "A short description of CXLogger.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/shenchunxing/CXLogger",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "shenchunxing": "519045026@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/shenchunxing/CXLogger.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "CXLogger/Classes/**/*",
+  "dependencies": {
+    "CocoaLumberjack": [
+
+    ],
+    "SSZipArchive": [
+
+    ],
+    "AFNetworking": [
+
+    ]
+  }
+}
